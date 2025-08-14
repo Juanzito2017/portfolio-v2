@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-principal: #000;
+    --cor-secundaria: #fdb927;
+    --cor-terciaria: #f2f2f2;
+    --fonte-principal: "Exo 2", serif;
+    --fonte-secundaria: "Varela Round", serif;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+}
+
+.lateral {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+    position: fixed;
+    padding-left: 1.4%;
+}
+
+.lateral__links {
+    margin-bottom: 19px;
+}
+
+.lateral__links:hover {
+    transform: scale(1.2);
+}
+
+/* Estilização do cabeçalho e barra de navegação */
+
+.cabecalho {
+    align-items: center;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 3%;
+    justify-content: flex-end;
+    
+}
+
+.cabecalho__menu__links {
+    font-family: "Varela Round", serif;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    margin: 3.4% 10% 0% 0%;
+}
+
+.cabecalho__menu__links:hover {
+    color: var(--cor-secundaria);
+}
+
+/* Estilização do main*/
+
+.apresentacao {
+    padding-bottom: 20%;
+    display: flex;
+}
+
+.apresentacao__principal {
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    color: var(--cor-terciaria);
+    width: 615px;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.destaque {
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__principal__titulo {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.apresentacao__principal__texto {
+    font-family: "Varela Round", sans-serif;
+    font-size: 24px;
+}
