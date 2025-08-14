@@ -6,6 +6,14 @@
     padding: 0;
 }
 
+@keyframes flutuar {
+    0% {
+        top: 0;
+    } 100% {
+        top: 30px;
+    }
+}
+
 :root {
     --cor-principal: #000;
     --cor-secundaria: #fdb927;
@@ -56,6 +64,7 @@ body {
     color: var(--cor-terciaria);
     text-decoration: none;
     margin: 3.4% 10% 0% 0%;
+    font-size: 1.2rem;
 }
 
 .cabecalho__menu__links:hover {
@@ -65,21 +74,21 @@ body {
 /* Estilização do main*/
 
 .apresentacao {
-    padding-bottom: 20%;
-    display: flex;
-}
-
-.apresentacao__principal {
-    padding: 6% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 40px;
+    padding: 6% 10%;
+    flex-wrap: wrap; /* Permite quebrar em telas menores */
+}
+
+.apresentacao__principal {
+    flex: 1; /* Faz ocupar o espaço restante */
+    max-width: 600px; /* Limita tamanho máximo */
     color: var(--cor-terciaria);
-    width: 615px;
+    display: flex;
     flex-direction: column;
     gap: 40px;
-
 }
 
 .destaque {
@@ -95,4 +104,12 @@ body {
 .apresentacao__principal__texto {
     font-family: "Varela Round", sans-serif;
     font-size: 24px;
+}
+
+.apresentacao__foto {
+    max-height: 560px;
+    max-width: 100%;
+    height: auto; /* Mantém proporção */
+    animation: flutuar 1s ease-in-out infinite alternate;
+    position: relative;
 }
