@@ -49,13 +49,14 @@ body {
 /* Estilização do cabeçalho e barra de navegação */
 
 .cabecalho {
-    align-items: center;
+    justify-content: center;
 }
 
 .cabecalho__menu {
     display: flex;
-    gap: 3%;
+    gap: 10%;
     justify-content: flex-end;
+    margin-right: 10%;
     
 }
 
@@ -63,12 +64,19 @@ body {
     font-family: "Varela Round", serif;
     color: var(--cor-terciaria);
     text-decoration: none;
-    margin: 3.4% 10% 0% 0%;
+    margin: 3.4% 0% 0% 0%;
     font-size: 1.2rem;
 }
 
 .cabecalho__menu__links:hover {
     color: var(--cor-secundaria);
+    transform: scale(1.03);
+}
+
+.cabecalho__logo {
+    max-height: 90px;
+    max-width: 100%;
+    height: auto; /* Mantém proporção */
 }
 
 /* Estilização do main*/
