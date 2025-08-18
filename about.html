@@ -11,8 +11,8 @@
         <nav class="cabecalho__menu">
             <a href="index.html"><img src="assets/logoJupiter.png" alt="" class="cabecalho__logo"></a>
             <a href="index.html" class="cabecalho__menu__links">Home</a>
-            <a href="" class="cabecalho__menu__links active">Sobre mim</a>
-            <a href="" class="cabecalho__menu__links">Meus Projetos</a>
+            <a href="about.html" class="cabecalho__menu__links active">Sobre mim</a>
+            <a href="projects.html" class="cabecalho__menu__links">Meus Projetos</a>
         </nav>
     </header>
     <aside class="lateral">
@@ -24,15 +24,65 @@
         <div class="apresentacao__habilidades">
             <h2 class="apresentacao__principal__titulo">Habilidades:</h2>
             <div class="apresentacao__habilidades__1">
-                <img src="assets/hard-skills/icons8-html-5.svg" alt="Logo do HTML" title="HTML">
-                <img src="assets/hard-skills/icons8-css-logo.svg" alt="Logo do CSS" title="CSS">
-                <img src="assets/hard-skills/icons8-javascript.svg" alt="Logo do Javascript" title="Javascript">
+                <img src="assets/hard-skills/icons8-html-5.svg" alt="Logo do HTML" title="HTML" onclick="abrirModal('htmlModal')">
+                <img src="assets/hard-skills/icons8-css-logo.svg" alt="Logo do CSS" title="CSS" onclick="abrirModal('cssModal')">
+                <img src="assets/hard-skills/icons8-javascript.svg" alt="Logo do Javascript" title="Javascript" onclick="abrirModal('jsModal')">
             </div>
+
+            <div id="htmlModal" class="modal">
+                <div class="modal-conteudo">
+                    <span class="fechar" onclick="fecharModal('htmlModal')">&times;</span>
+                    <h2>HTML</h2>
+                    <p>HTML é a linguagem de marcação usada para estruturar páginas web, definindo títulos, parágrafos, links, imagens e outros elementos.</p>
+                </div>
+            </div>
+
+            <div id="cssModal" class="modal">
+                <div class="modal-conteudo">
+                    <span class="fechar" onclick="fecharModal('cssModal')">&times;</span>
+                    <h2>CSS</h2>
+                    <p>CSS é usado para estilizar páginas web, controlando cores, fontes, espaçamentos, layouts e responsividade.</p>
+                </div>
+            </div>
+
+            <div id="jsModal" class="modal">
+                <div class="modal-conteudo">
+                    <span class="fechar" onclick="fecharModal('jsModal')">&times;</span>
+                    <h2>JavaScript</h2>
+                    <p>JavaScript é a linguagem de programação que adiciona interatividade e dinamismo às páginas web.</p>
+                </div>
+            </div>            
+
             <div class="apresentacao__habilidades__2">
-                <img src="assets/hard-skills/icons8-git-logo.svg" alt="Logo do Git" title="Git">
-                <img src="assets/hard-skills/icons8-github-skill.svg" alt="Logo do Github" title="Github">
-                <img src="assets/hard-skills/icons8-python.svg" alt="Logo do Python" title="Python">
+                <img src="assets/hard-skills/icons8-git-logo.svg" alt="Logo do Git" title="Git" onclick="abrirModal('gitModal')">
+                <img src="assets/hard-skills/icons8-github-skill.svg" alt="Logo do Github" title="Github" onclick="abrirModal('githubModal')">
+                <img src="assets/hard-skills/icons8-python.svg" alt="Logo do Python" title="Python" onclick="abrirModal('pythonModal')">
             </div>
+
+            <div id="gitModal" class="modal">
+                <div class="modal-conteudo">
+                    <span class="fechar" onclick="fecharModal('gitModal')">&times;</span>
+                    <h2>Git</h2>
+                    <p>O Git é um sistema de controle de versão que permite rastrear mudanças no código e trabalhar em equipe de forma organizada. Ele ajuda a manter o histórico de desenvolvimento e facilita a colaboração entre programadores.</p>
+                </div>
+            </div>
+
+            <div id="githubModal" class="modal">
+                <div class="modal-conteudo">
+                    <span class="fechar" onclick="fecharModal('githubModal')">&times;</span>
+                    <h2>Github</h2>
+                    <p>O GitHub é uma plataforma online que utiliza o Git para hospedar repositórios. É o lugar onde desenvolvedores compartilham projetos, colaboram em equipe e contribuem para a comunidade de código aberto.</p>
+                </div>
+            </div>
+
+            <div id="pythonModal" class="modal">
+                <div class="modal-conteudo">
+                    <span class="fechar" onclick="fecharModal('githubModal')">&times;</span>
+                    <h2>Github</h2>
+                    <p>O GitHub é uma plataforma online que utiliza o Git para hospedar repositórios. É o lugar onde desenvolvedores compartilham projetos, colaboram em equipe e contribuem para a comunidade de código aberto.</p>
+                </div>
+            </div>
+
         </div>
         <section class="apresentacao__principal">
             <h2 class="apresentacao__principal__titulo">Sobre mim</h2>
@@ -43,5 +93,6 @@
         <img src="assets/Logo_Alura_Include_(1).svg" alt="Logo da Alura">
         <img src="assets/logoJupiter.png" alt="" class="cabecalho__logo">
     </footer>
+    <script src="js/modais.js"></script>
 </body>
 </html>

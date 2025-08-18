@@ -219,11 +219,61 @@ body {
     border-top-left-radius: 5%;
 }
 
+.apresentacao__habilidades__1 img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.apresentacao__habilidades__1 img:hover {
+  transform: scale(1.1);
+}
+
 .apresentacao__habilidades__2 {
     background-color: #2B2E33;
     border-bottom-right-radius: 5%;
 }
 
+.apresentacao__habilidades__2 img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.apresentacao__habilidades__2 img:hover {
+  transform: scale(1.1);
+}
+
+
+/*Modal*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo {
+    background: #2B2E33;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    font-family: var(--fonte-secundaria);
+}
+
+.fechar {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--cor-secundaria);
+}
 
 /* Estilização do Rodape*/
 .rodape {
