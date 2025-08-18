@@ -59,7 +59,7 @@ body {
     justify-content: space-between; /* Logo à esquerda, menu à direita */
     align-items: center; /* Alinha verticalmente */
     padding: 20px 10%; /* Dá respiro no topo/lados */
-    gap: 10%px; /* Espaço entre elementos */
+    gap: 8%; /* Espaço entre elementos */
 }
 
 .cabecalho__menu__links {
@@ -129,6 +129,7 @@ body {
     font-weight: 700;
     font-size: 3.5rem;
     min-height: 2.4em;
+    color: var(--cor-terciaria);
 }
 
 #nome-autor::after {
@@ -179,6 +180,7 @@ body {
     margin: 20px auto 0 auto;        /* centraliza horizontalmente */
     transition: 0.4s;
     position: relative;
+    border: 10px solid var(--cor-terciaria);
 }
 
 .apresentacao__principal__contato::after {
@@ -211,6 +213,17 @@ body {
 .apresentacao__principal__contato:hover {
     background-color: var(--cor-terciaria);
 }
+
+.apresentacao__habilidades__1 {
+    background-color: #2B2E33;
+    border-top-left-radius: 5%;
+}
+
+.apresentacao__habilidades__2 {
+    background-color: #2B2E33;
+    border-bottom-right-radius: 5%;
+}
+
 
 /* Estilização do Rodape*/
 .rodape {
