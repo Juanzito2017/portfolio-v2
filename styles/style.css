@@ -107,9 +107,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 2%;
     padding: 1% 10% 6% 10%;
     flex-wrap: wrap; /* Permite quebrar em telas menores */
+}
+
+#about {
+    align-items: normal;
+}
+
+#open-modal {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-principal);
+    font-size: 1.38rem;
+    text-align: center;
+}
+
+#sobre-mim {
+    min-height: 0;
 }
 
 .apresentacao__principal {
@@ -156,8 +171,8 @@ body {
     font-size: 1.5rem;
 }
 
-.apresentacao__foto {
-    max-height: 560px;
+.apresentacao__foto { 
+    max-height: 560px; 
     max-width: 100%;
     height: auto; /* Mantém proporção */
     animation: flutuar 1s ease-in-out infinite alternate;
@@ -214,9 +229,15 @@ body {
     background-color: var(--cor-terciaria);
 }
 
+#resumo-juan {
+    line-height: 1.8;
+}
+
+
 .apresentacao__habilidades__1 {
     background-color: #2B2E33;
     border-top-left-radius: 5%;
+    gap: 20%;
 }
 
 .apresentacao__habilidades__1 img {
@@ -283,4 +304,95 @@ body {
     /*
     background-image: linear-gradient(to bottom, #000, gray);*/
     gap: 7%;
+}
+
+
+/*PROJETOS*/
+.projetos__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 2.5rem;
+    color: var(--cor-terciaria);
+    text-align: center;
+    margin: 40px 0;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 10% 5% 10%;
+}
+
+.projeto {
+    display: flex;
+    gap: 1%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projeto__imagem {
+    position: relative;
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+}
+
+.projeto__imagem img {
+    width: 100%;
+    max-width: 380px;  /* 🔹 controla a largura máxima */
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto; /* centraliza se for menor */
+}
+
+.projeto__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    border-radius: 12px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.projeto__overlay a {
+    font-family: var(--fonte-principal);
+    font-size: 1.3rem;
+    background: var(--cor-secundaria);
+    color: var(--cor-principal);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.projeto__overlay a:hover {
+    transform: scale(1.1);
+}
+
+.projeto__imagem:hover .projeto__overlay {
+    opacity: 1;
+}
+
+.projeto__descricao {
+    flex: 1;
+    min-width: 280px;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.projeto__descricao h3 {
+    color: var(--cor-secundaria);
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.projeto__descricao p {
+    font-size: 1.4rem;
 }
