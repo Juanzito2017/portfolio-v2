@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Portfolio</title>
     <link rel="icon" href="/assets/logoJupiter.png" type="image/png">
+    <link rel="stylesheet" href="styles/form.css">
 
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
             <a href="index.html"><img src="assets/logoJupiter.png" alt="" class="cabecalho__logo"></a>
-            <a href="index.html" class="cabecalho__menu__links active">Home</a>
+            <a href="index.html" class="cabecalho__menu__links">Home</a>
             <a href="about.html" class="cabecalho__menu__links">Sobre mim</a>
             <a href="projects.html" class="cabecalho__menu__links">Projetos</a>
         </nav>
@@ -22,13 +23,26 @@
         <a href="" class="lateral__links"><img src="assets/icons/icons8-linkedin-yellow.svg" alt="Logo do LinkedIn" title="LinkedIn"></a>
         <a href="" class="lateral__links"><img src="assets/icons/icons8-instagram-yellow.svg" alt="Logo do Instagram" title="Instagram"></a>
     </aside>
-    <main class="apresentacao">
-        <section class="apresentacao__principal">
-            <h1 class="apresentacao__principal__titulo" id="nome-autor"></h1>
-            <p class="apresentacao__principal__texto">Olá! Sou Juan Leite, <strong class="destaque">desenvolvedor Front-end</strong> com paixão por matemática e tecnologia desde 2019. Combino raciocínio analítico e precisão técnica para projetar soluções digitais eficientes, seguras e escaláveis, transformando ideias em resultados concretos e elegantes.</p>
-            <a href="contact.html" class="apresentacao__principal__contato">Contato</a>
+    <main class="formulario">
+        <section class="formulario">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="post" class="formulario__container">
+                <!-- Nome -->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <!-- Email -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <!-- Pedido -->
+                <label for="pedido">Pedido:</label>
+                <textarea id="pedido" name="pedido" rows="5" placeholder="Escreva seu pedido..." required></textarea>
+
+                <!-- Botão -->
+                <button type="submit">Enviar</button>
+            </form>
         </section>
-        <img src="assets/perfilJuan.png" alt="" class="apresentacao__foto">
     </main>
     <footer class="rodape">
         <img src="assets/Logo_Alura_Include_(1).svg" alt="Logo da Alura">

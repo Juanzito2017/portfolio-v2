@@ -19,14 +19,11 @@ function digitarApagar() {
             }
             setTimeout(digitarApagar, atraso);
         } else {
-            // Quando terminar de escrever, muda para apagar
             escrevendo = false;
-            setTimeout(digitarApagar, 1000); // pausa antes de apagar
+            setTimeout(digitarApagar, 1000);
         }
     } else {
-        // Apagar
         if (i > 0) {
-            // Evita apagar dentro de tags HTML
             if (texto[i - 1] === ">") {
                 let inicioTag = texto.lastIndexOf("<", i - 1);
                 textoElemento.innerHTML = texto.substring(0, inicioTag);
@@ -37,9 +34,8 @@ function digitarApagar() {
             }
             setTimeout(digitarApagar, atraso);
         } else {
-            // Quando terminar de apagar, muda para escrever novamente
             escrevendo = true;
-            setTimeout(digitarApagar, 500); // pequena pausa antes de recomeçar
+            setTimeout(digitarApagar, 500);
         }
     }
 }

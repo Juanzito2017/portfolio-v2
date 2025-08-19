@@ -101,7 +101,7 @@ body {
     height: auto;
 }
 
-/* Estilização do main*/
+/* MAIN */
 
 .apresentacao {
     display: flex;
@@ -128,7 +128,7 @@ body {
 }
 
 .apresentacao__principal {
-    max-width: 600px; /* Limita tamanho máximo */
+    max-width: 600px;
     color: var(--cor-terciaria);
     display: flex;
     flex-direction: column;
@@ -180,19 +180,19 @@ body {
 }
 
 .apresentacao__principal__contato {
-    display: block;                   /* transforma em bloco para centralizar */
-    width: 120px;                     /* largura fixa */
-    height: 120px;                    /* altura fixa */
-    line-height: 120px;               /* centraliza o texto verticalmente */
+    display: block;                   
+    width: 120px;                     
+    height: 120px;                    
+    line-height: 120px;               
     background-color: var(--cor-secundaria);
     color: var(--cor-principal);
-    text-align: center;               /* centraliza horizontalmente */
-    border-radius: 50%;               /* deixa redondo */
-    text-decoration: none;            /* remove sublinhado do link */
+    text-align: center;               
+    border-radius: 50%;          
+    text-decoration: none;            
     font-family: var(--fonte-principal);
     font-weight: 700;
     font-size: 1.6rem;
-    margin: 20px auto 0 auto;        /* centraliza horizontalmente */
+    margin: 20px auto 0 auto;       
     transition: 0.4s;
     position: relative;
     border: 10px solid var(--cor-terciaria);
@@ -264,7 +264,7 @@ body {
 }
 
 
-/*Modal*/
+/* MODA L*/
 .modal {
     display: none;
     position: fixed;
@@ -296,18 +296,16 @@ body {
     color: var(--cor-secundaria);
 }
 
-/* Estilização do Rodape*/
+/* RODAPE */
 .rodape {
     display: flex;
     padding-bottom: 1.5%;
     justify-content: center;
-    /*
-    background-image: linear-gradient(to bottom, #000, gray);*/
     gap: 7%;
 }
 
 
-/*PROJETOS*/
+/* PROJETOS */
 .projetos__titulo {
     font-family: var(--fonte-principal);
     font-size: 2.5rem;
@@ -339,11 +337,11 @@ body {
 
 .projeto__imagem img {
     width: 100%;
-    max-width: 380px;  /* 🔹 controla a largura máxima */
+    max-width: 380px;
     height: auto;
     border-radius: 12px;
     display: block;
-    margin: 0 auto; /* centraliza se for menor */
+    margin: 0 auto;
 }
 
 .projeto__overlay {
