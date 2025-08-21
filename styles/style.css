@@ -322,7 +322,7 @@ body {
     flex-wrap: wrap;
     background-color: #2B2E33;
     border-radius: 1%;
-    box-shadow: 0 0 20px 5px var(--cor-secundaria);
+    box-shadow: 0 0 20px 5px var(--cor-terciaria);
     padding: 1%;
 }
 
