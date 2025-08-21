@@ -176,6 +176,9 @@ body {
     height: auto; 
     animation: flutuar 1s ease-in-out infinite alternate;
     position: relative;
+    border-radius: 70%;
+    box-shadow: 0 0 20px 5px var(--cor-terciaria);
+    background-color: var(--cor-terciaria);
 }
 
 .apresentacao__principal__contato {
