@@ -1,6 +1,6 @@
 var texto = `∑ criatividade + lógica = <strong class="destaque">Juan Leite</strong>`;
 var textoElemento = document.querySelector(".apresentacao__principal__titulo");
-var atraso = 100;
+var atraso = 125;
 
 var i = 0;
 var escrevendo = true;
