@@ -10,7 +10,7 @@
     0% {
         top: 0;
     } 100% {
-        top: 30px;
+        top: 1.875rem; /* 30px */
     }
 }
 
@@ -20,7 +20,6 @@
     --cor-terciaria: #f2f2f2;
     --fonte-principal: "Exo 2", serif;
     --fonte-secundaria: "Varela Round", serif;
-
 }
 
 body {
@@ -39,7 +38,7 @@ body {
 }
 
 .lateral__links {
-    margin-bottom: 19px;
+    margin-bottom: 1.2rem; /* 19px */
     transition: 0.2s;
 }
 
@@ -56,10 +55,10 @@ body {
 
 .cabecalho__menu {
     display: flex;
-    justify-content: right; /* Logo à esquerda, menu à direita */
-    align-items: center; /* Alinha verticalmente */
-    padding: 1% 10%; /* Dá respiro no topo/lados */
-    gap: 10%; /* Espaço entre elementos */
+    justify-content: right; 
+    align-items: center; 
+    padding: 1% 10%; 
+    gap: 10%; 
 }
 
 .cabecalho__menu__links {
@@ -69,9 +68,7 @@ body {
     font-size: 1.4rem;
     position: relative;
     display: block;
-    
 }
-
 
 .cabecalho__menu__links:hover {
     color: var(--cor-secundaria);
@@ -81,10 +78,10 @@ body {
 .cabecalho__menu__links::after {
     content: "";
     position: absolute;
-    bottom: -5px; /* distância da linha em relação ao texto */
+    bottom: -0.3rem; /* 5px */
     left: 0;
     width: 0;
-    height: 2px;
+    height: 0.125rem; /* 2px */
     background: var(--cor-secundaria);
     transition: width 0.3s ease;
 }
@@ -98,7 +95,7 @@ body {
 }
 
 .cabecalho__logo {
-    max-height: 90px;
+    max-height: 5.6rem; /* 90px */
     height: auto;
 }
 
@@ -110,7 +107,7 @@ body {
     justify-content: space-between;
     gap: 2%;
     padding: 1% 10% 6% 10%;
-    flex-wrap: wrap; /* Permite quebrar em telas menores */
+    flex-wrap: wrap; 
 }
 
 #about {
@@ -129,11 +126,11 @@ body {
 }
 
 .apresentacao__principal {
-    max-width: 600px;
+    max-width: 37.5rem; /* 600px */
     color: var(--cor-terciaria);
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem; /* 40px */
 }
 
 .destaque {
@@ -144,7 +141,7 @@ body {
     font-family: "Exo 2", sans-serif;
     font-weight: 700;
     font-size: 3.5rem;
-    min-height: 2.4em;
+    min-height: 2.5em;
     color: var(--cor-terciaria);
 }
 
@@ -174,18 +171,18 @@ body {
 }
 
 .apresentacao__foto { 
-    max-height: 560px; 
+    max-height: 35rem; /* 560px */ 
     max-width: 100%;
-    height: auto; /* Mantém proporção */
+    height: auto; 
     animation: flutuar 1s ease-in-out infinite alternate;
     position: relative;
 }
 
 .apresentacao__principal__contato {
     display: block;                   
-    width: 120px;                     
-    height: 120px;                    
-    line-height: 120px;               
+    width: 7.5rem;   /* 120px */                  
+    height: 7.5rem;                    
+    line-height: 7.5rem;               
     background-color: var(--cor-secundaria);
     color: var(--cor-principal);
     text-align: center;               
@@ -194,10 +191,10 @@ body {
     font-family: var(--fonte-principal);
     font-weight: 700;
     font-size: 1.6rem;
-    margin: 20px auto 0 auto;       
+    margin: 1.25rem auto 0 auto; /* 20px */      
     transition: 0.4s;
     position: relative;
-    border: 10px solid var(--cor-terciaria);
+    border: 0.625rem solid var(--cor-terciaria); /* 10px */
 }
 
 .apresentacao__principal__contato::after {
@@ -235,38 +232,31 @@ body {
     line-height: 1.8;
 }
 
-
-.apresentacao__habilidades__1 {
-    background-color: #2B2E33;
-    border-top-left-radius: 5%;
-    gap: 20%;
-}
-
-.apresentacao__habilidades__1 img {
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.apresentacao__habilidades__1 img:hover {
-  transform: scale(1.1);
-}
-
+.apresentacao__habilidades__1,
 .apresentacao__habilidades__2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    flex-wrap: wrap; /* permite quebrar linha se necessário */
     background-color: #2B2E33;
-    border-bottom-right-radius: 5%;
+    gap: 1rem;
 }
 
+.apresentacao__habilidades__1 img,
 .apresentacao__habilidades__2 img {
-  cursor: pointer;
-  transition: transform 0.2s ease;
+    width: 7.5rem; /* ajuste o tamanho das tecnologias */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
+.apresentacao__habilidades__1 img:hover,
 .apresentacao__habilidades__2 img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-
-/* MODA L*/
+/* MODAL */
 .modal {
     display: none;
     position: fixed;
@@ -282,18 +272,18 @@ body {
 
 .modal-conteudo {
     background: #2B2E33;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1.25rem; /* 20px */
+    border-radius: 0.625rem; /* 10px */
     color: #fff;
-    max-width: 500px;
+    max-width: 31.25rem; /* 500px */
     text-align: center;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 0.9375rem rgba(0,0,0,0.5); /* 15px */
     font-family: var(--fonte-secundaria);
 }
 
 .fechar {
     float: right;
-    font-size: 28px;
+    font-size: 1.75rem; /* 28px */
     cursor: pointer;
     color: var(--cor-secundaria);
 }
@@ -306,20 +296,19 @@ body {
     gap: 7%;
 }
 
-
 /* PROJETOS */
 .projetos__titulo {
     font-family: var(--fonte-principal);
     font-size: 2.5rem;
     color: var(--cor-terciaria);
     text-align: center;
-    margin: 40px 0;
+    margin: 2.5rem 0; /* 40px */
 }
 
 .projetos {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 3.75rem; /* 60px */
     padding: 0 10% 5% 10%;
 }
 
@@ -328,20 +317,24 @@ body {
     gap: 1%;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #2B2E33;
+    border-radius: 1%;
+    box-shadow: 0 0 20px 5px var(--cor-secundaria);
+    padding: 1%;
 }
 
 .projeto__imagem {
     position: relative;
     flex: 1;
-    min-width: 280px;
-    max-width: 450px;
+    min-width: 17.5rem;
+    max-width: 28.125rem; 
 }
 
 .projeto__imagem img {
     width: 100%;
-    max-width: 380px;
+    max-width: 23.75rem;
     height: auto;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     display: block;
     margin: 0 auto;
 }
@@ -353,7 +346,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.6);
-    border-radius: 12px;
+    border-radius: 0.75rem;
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -366,8 +359,8 @@ body {
     font-size: 1.3rem;
     background: var(--cor-secundaria);
     color: var(--cor-principal);
-    padding: 10px 20px;
-    border-radius: 8px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
     text-decoration: none;
     transition: transform 0.2s ease;
 }
@@ -382,14 +375,14 @@ body {
 
 .projeto__descricao {
     flex: 1;
-    min-width: 280px;
+    min-width: 17.5rem; /* 280px */
     color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
 }
 
 .projeto__descricao h3 {
     color: var(--cor-secundaria);
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px */
     font-size: 1.4rem;
 }
 
@@ -402,7 +395,7 @@ body {
 /* Tablets (até 1024px) */
 @media (max-width: 1024px) {
     .cabecalho__menu {
-        padding: 20px 5%;
+        padding: 1.25rem 5%; /* 20px */
         gap: 4%;
     }
 
@@ -416,8 +409,8 @@ body {
     }
 
     .apresentacao__foto {
-        max-height: 400px;
-        margin-top: 20px;
+        max-height: 25rem; /* 400px */
+        margin-top: 1.25rem; /* 20px */
     }
 }
 
@@ -425,15 +418,15 @@ body {
 @media (max-width: 768px) {
     .cabecalho__menu {
         flex-direction: column;
-        gap: 15px;
+        gap: 0.9rem; /* 15px */
     }
 
     .cabecalho__logo {
-        max-height: 70px;
+        max-height: 4.4rem; /* 70px */
     }
 
     .apresentacao__principal__titulo {
-        font-size: 2.2rem; /* menor título no celular */
+        font-size: 2.2rem;
     }
 
     .apresentacao__principal__texto {
@@ -441,18 +434,42 @@ body {
     }
 
     .apresentacao__principal__contato {
-        width: 100px;
-        height: 100px;
+        width: 6.25rem;  /* 100px */
+        height: 6.25rem;
         font-size: 1.3rem;
-        line-height: 100px;
+        line-height: 6.25rem;
     }
 
     .lateral {
-        display: none; /* Esconde ícones laterais no mobile */
+        display: none;
     }
 
     .projeto {
         flex-direction: column;
         text-align: center;
+    }
+
+    #sobre-mim {
+        padding-top: 10%;
+    }
+
+    .rodape {
+        margin-top: 20%;
+    }
+
+    .apresentacao__habilidades__1,
+    .apresentacao__habilidades__2 {
+        justify-content: center; /* centraliza as imagens */
+    }
+
+    .apresentacao__habilidades__1 img,
+    .apresentacao__habilidades__2 img {
+        width: 4.5rem; /* reduz tamanho se quiser */
+    }
+
+    /* Opcional: juntar as duas linhas em uma única linha */
+    .apresentacao__habilidades__1,
+    .apresentacao__habilidades__2 {
+        flex-wrap: nowrap; /* força em uma linha, pode usar overflow-x se necessário */
     }
 }
