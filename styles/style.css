@@ -241,14 +241,14 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 1rem 0;
-    flex-wrap: wrap; /* permite quebrar linha se necessário */
+    flex-wrap: wrap;
     background-color: #2B2E33;
     gap: 1rem;
 }
 
 .apresentacao__habilidades__1 img,
 .apresentacao__habilidades__2 img {
-    width: 7.5rem; /* ajuste o tamanho das tecnologias */
+    width: 7.5rem;
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -275,18 +275,18 @@ body {
 
 .modal-conteudo {
     background: #2B2E33;
-    padding: 1.25rem; /* 20px */
-    border-radius: 0.625rem; /* 10px */
+    padding: 1.25rem;
+    border-radius: 0.625rem;
     color: #fff;
-    max-width: 31.25rem; /* 500px */
+    max-width: 31.25rem;
     text-align: center;
-    box-shadow: 0 0 0.9375rem rgba(0,0,0,0.5); /* 15px */
+    box-shadow: 0 0 0.9375rem rgba(0,0,0,0.5);
     font-family: var(--fonte-secundaria);
 }
 
 .fechar {
     float: right;
-    font-size: 1.75rem; /* 28px */
+    font-size: 1.75rem;
     cursor: pointer;
     color: var(--cor-secundaria);
 }
@@ -305,13 +305,13 @@ body {
     font-size: 2.5rem;
     color: var(--cor-terciaria);
     text-align: center;
-    margin: 2.5rem 0; /* 40px */
+    margin: 2.5rem 0;
 }
 
 .projetos {
     display: flex;
     flex-direction: column;
-    gap: 3.75rem; /* 60px */
+    gap: 3.75rem;
     padding: 0 10% 5% 10%;
 }
 
@@ -378,14 +378,14 @@ body {
 
 .projeto__descricao {
     flex: 1;
-    min-width: 17.5rem; /* 280px */
+    min-width: 17.5rem;
     color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
 }
 
 .projeto__descricao h3 {
     color: var(--cor-secundaria);
-    margin-bottom: 0.625rem; /* 10px */
+    margin-bottom: 0.625rem;
     font-size: 1.4rem;
 }
 
@@ -444,6 +444,12 @@ body {
         line-height: 6.25rem;
     }
 
+    .apresentacao__foto {
+        animation: none;
+        margin-bottom: 12%;
+        max-width: 15rem;
+    }
+
     .lateral {
         display: none;
     }
@@ -463,17 +469,16 @@ body {
 
     .apresentacao__habilidades__1,
     .apresentacao__habilidades__2 {
-        justify-content: center; /* centraliza as imagens */
+        justify-content: center;
     }
 
     .apresentacao__habilidades__1 img,
     .apresentacao__habilidades__2 img {
-        width: 4.5rem; /* reduz tamanho se quiser */
+        width: 4.5rem;
     }
 
-    /* Opcional: juntar as duas linhas em uma única linha */
     .apresentacao__habilidades__1,
     .apresentacao__habilidades__2 {
-        flex-wrap: nowrap; /* força em uma linha, pode usar overflow-x se necessário */
+        flex-wrap: nowrap;
     }
 }
